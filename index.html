@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Welcome!</title>
+        <title>Matthew Martinez Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header class="hero">
             <div class="hero-media">
-                <img src="preimg.png" alt="Hero Background" class="hero-image" />
+                <img src="banner.png" alt="Hero Background" class="hero-image" />
             </div>
 
             <div class="hero-content">
@@ -18,7 +18,10 @@
         </header>
 
         <section class="quote-container">
-            "Don't quote me on anything"
+            <div>
+                <span id="quote">"The problem with quotes found on the internet is that they are often not true."</span>
+                <span id="attributor">-Abraham Lincoln</span>
+            </div>
         </section>
 
         <section class="skills-container">
@@ -27,32 +30,74 @@
             <input type="radio" name="tab" id="tab3" />
 
             <ul class="menu-left">
-                <li><label for="tab1">Features</label></li>
-                <li><label for="tab2">Pricing</label></li>
-                <li><label for="tab3">About</label></li>
+                <li>
+                    <label for="tab1">Expertise</label>
+                    <span></span>
+                </li>
+                <li>
+                    <label for="tab2">Education</label>
+                    <span></span>
+                </li>
+                <li>
+                    <label for="tab3">Dream Jobs</label>
+                    <span></span>
+                </li>
             </ul>
 
             <div class="menu-right">
                 <div class="tab-content" id="content1">
-                <ul>
-                    <li>Live Collaboration</li>
-                    <li>Version Control</li>
-                    <li>Dark Mode</li>
-                </ul>
+                    <img src="programmer.jpg">
+                    <ul id="expertise-list">
+                        <li>A multitude of programming languages such as C/C++, Java, C#, Python, Javascript</li>
+                        <li>Experience in building webservers for public use</li>
+                        <li>Experience in constructing and modifying 3d rendering pipelines</li>
+                        <li>Working knowledge of music theory foundations</li>
+                    </ul>
                 </div>
                 <div class="tab-content" id="content2">
-                <ul>
-                    <li>Monthly</li>
-                    <li>Annual</li>
-                    <li>Enterprise</li>
-                </ul>
+                    <img src="gsu-everywhere.jpg">
+                    <ul>
+                        <li>Pursuing Undergraduate Computer Science at GSU
+                            <ul id="expertise-list">
+                                <li>Attended from 2022-Present</li>
+                            </ul>
+                        </li>
+                        <li>Attended Undergraduate Computer Science at Rose Hulman
+                            <ul id="expertise-list">
+                                <li>Attended from 2021-2022</li>
+                                <li>Unfortunately had to transfer before graduation for financial reasons</li>
+                            </ul>
+                        </li>
+                        <li>Attended Various High Schools in New York City
+                            <ul id="expertise-list">
+                                <li>Attended from 2017-2021</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div class="tab-content" id="content3">
-                <ul>
-                    <li>Team</li>
-                    <li>Mission</li>
-                    <li>Contact</li>
-                </ul>
+                    <img src="software-ag-office-design-11-1200x698.jpg">
+                    <ol>
+                        <li>Software Developer
+                            <ul id="expertise-list">
+                                <li>Focuses on developing programs to be run on computers</li>
+                                <li>Got into this around 2013</li>
+                            </ul>
+                        </li>
+                        <li>Cybersecurity Analyst
+                            <ul id="expertise-list">
+                                <li>Focuses on protecting programs from exploitable bugs and obscuring certain information or methods</li>
+                                <li>Got into this around 2018</li>
+                            </ul>
+                        </li>
+                        <li>System Architect
+                            <ul id="expertise-list">
+                                <li>Focuses on designing and developing networking systems</li>
+                                <li>Got into this around 2021</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <span>Resume in progress so in the meantime...<br><a href="">here's my dog</a></span>
                 </div>
             </div>
         </section>
@@ -60,7 +105,11 @@
         <section class="interests-container">
             <div class="scroll-row">
                 <div class="text-space">
-                    <div class="text-block">Text 1</div>
+                    <div class="text-block">
+                        <h1>Music Production</h1>
+                        <div>I got into music production while I was in high school, using little more than my computer, a pirated daw, and some free vsts. Thankfully I have better stuff today! 
+                            Here's a website I use to learn a practice a bit of my music theory and playing: <a href="https://www.hooktheory.com/theorytab">hooktheory.com</a></div>
+                    </div>
                 </div>
                 <div class="image-block">
                     <img src="preimg.png" alt="Image"/>
@@ -68,7 +117,12 @@
             </div>
             <div class="scroll-row">
                 <div class="text-space">
-                    <div class="text-block">Text 2</div>
+                    <div class="text-block">
+                        <h1>3D Modeling</h1>
+                        <div>I started learning about 3d art when I was in middle school. It was just for some dumb post I wanted to do but it's started a lifelong interest of mine.
+                            These days I've been expanding my skills into rendering pipelines and shaders. Here's a website I use to find inspiration: <a href="https://www.artstation.com/">artstation.com</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="image-block">
                     <img src="preimg.png" alt="Image"/>
@@ -76,7 +130,14 @@
             </div>
             <div class="scroll-row">
                 <div class="text-space">
-                    <div class="text-block">Text 3</div>
+                    <div class="text-block">
+                        <h1>Game Modding</h1>
+                        <div>I got into game modding when I was in middle school. It started as just altering ini files, but over the years I've wanted to learn more and more.
+                            It's helped me learn a lot about memory structures in games and how to alter them to insert new content compatible with the engine. Just one example of these is
+                            rom hacking. It's an old form of modding where retro video game roms have their memory altered to allow whole new levels. While by no means comprehensive, here's a 
+                            website with a large database of rom hacks for a large collection of retro games: <a href="https://www.romhacking.net/">romhacking.net</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="image-block">
                     <img src="preimg.png" alt="Image"/>
@@ -86,22 +147,24 @@
 
         <section class="assignments-container">
             <table class="assignments-table">
-                <tr class="title-row">
-                    <td>Type</td>
-                    <td>Assignment</td>
-                    <td>Link</td>
-                </tr>
-                <tr class="light-row">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Assignment</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tr>
                     <td>Classwork (take-home)</td>
                     <td>Classwork 1: Formatting Text</td>
                     <td><a href="https://codd.cs.gsu.edu/~mmartinez78/WP/CW/CW1/index.html">link</a></td>
                 </tr>
-                <tr class="dark-row">
+                <tr>
                     <td>Classwork (in-class)</td>
                     <td>In-Classwork 1: Intro to CSS</td>
                     <td><a href="https://codd.cs.gsu.edu/~mmartinez78/WP/CW/ICW1/index.html">link</a></td>
                 </tr>
-                <tr class="light-row">
+                <tr>
                     <td>Classwork (in-class)</td>
                     <td>In-Classwork 2: Z-Position</td>
                     <td><a href="https://codd.cs.gsu.edu/~mmartinez78/WP/CW/ICW2/index.html">link</a></td>
